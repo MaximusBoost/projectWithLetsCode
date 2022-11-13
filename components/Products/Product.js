@@ -5,8 +5,16 @@ class Products {
         this.labelRemove = 'Удалить из корзины';
     }
 
-    handleSetLocationStorage() {
-        console.log('everything OK');
+    handleSetLocationStorage(element, id) {
+        const { pushProduct, products } = localStorageUtil.putProducts(id);
+
+        if(pushProduct) {
+            element.classList.add(this.classNameActive);
+            element.innerHTML = this.labelRemove;
+        } else {
+            element.classList.remove(this.classNameActive);
+            element.innerHTML = this.labelAdd;
+        }
     };
 
     render() {
@@ -30,7 +38,7 @@ class Products {
                 <span class='products-element__name'>${name}</span>
                 <img class='products-element__img' src='${img}'>
                 <span class='products-element__price'>🔥 ${price.toLocaleString()} USD</span>
-                <button class='products-element__btn ${activeClass}' onclick ='productsPage.handleSetLocationStorage'>${activeText}</button>
+                <button class='products-element__btn ${activeClass}' onclick ='productsPage.handleSetLocationStorage(this, "${id}")'>${activeText}</button>
             </li>
             `;
         } );
