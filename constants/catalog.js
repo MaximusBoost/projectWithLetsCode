@@ -1,7 +1,7 @@
 const CATALOG = [
     {
         id: 'el1',
-        name: 'YAMAHA F310',
+        name: 'YAMAHA F310 aaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa',
         img: 'https://i.ibb.co/JpvYSrB/1-YAMAHA-F310.jpg',
         price: 19890,
     },
@@ -37,7 +37,7 @@ const CATALOG = [
     },
     {
         id: 'el7',
-        name: 'IBANEZ TCY10E-BK',
+        name: 'IBANEZ TCY10E-BK and lalalallalalalalalalallalalalala',
         img: 'https://i.ibb.co/gPNH9Rd/7.jpg',
         price: 24700,
     },
