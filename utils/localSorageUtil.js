@@ -29,6 +29,4 @@ class LocalStorageUtil {
     }
 };
 
-let localS = new LocalStorageUtil();
-
-localS.putProducts('el1');
+let localStorageUtil = new LocalStorageUtil();
