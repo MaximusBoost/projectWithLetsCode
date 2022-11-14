@@ -3,6 +3,7 @@
     --color-white: #fff;
     --color-unaccent: #808080;
     --color-medium: #e6e5e5;
+    --color-dark: #a1a1a1;
 
     --spacing-small: 10px;
     --spacing-medium: 15px;
@@ -11,6 +12,18 @@
     --linear-gradient: linear-gradient(45deg, #30cfd0, #330867);
     --box-shadow: 0px 0px 24px 5px rgba(34, 60, 80, 0.28);
     --border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-dark);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-white);
 }
 
 *{
